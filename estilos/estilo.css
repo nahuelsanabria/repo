@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { background-color: rgb(153, 149, 149);
+  
+
+}
+
+.contenedor {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+.header {
+ background-color:  red;
+  padding: 20px;
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.header img {
+  width: 130px;
+  border-radius: 25%;
+}
+
+.header nav ul {
+  list-style: none;
+  background-color: rgb(204, 204, 204);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.header nav ul a {
+  color: black;
+  text-decoration: none;
+  padding: 18px;
+  display: block;
+}
+
+.header nav ul li a:hover {
+  background-color: grey;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+.titulo {
+  
+
+}
+
+.main {
+  background-color: white;
+  padding: 20px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aside {
+  background-color: rgb(249, 62, 62);
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Qwitcher Grypen', cursive;
+
+}
+
+.primerParrafo {
+  padding: 20px;
+  margin: 10px;
+  font-family: 'Silkscreen', cursive;
+
+}
+
+.footer {
+  padding:20px;
+  grid-area: footer;
+  
+}
+.grad1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(to top grey red black );
+
+}
+
+h3 {
+  padding: 10px 20px;
+}
+
+@media screen and (max-width:600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav ul {
+    justify-content: center;
+  }
+}
+
+
+/*-------------------nosotros -----------------------------*/
+
+.titulo2 {
+  color: red;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  text-align: center
+}
+
+.parrafoNos {
+  padding: 20px;
+  margin: 10px;
+  font-family: 'Silkscreen', cursive;
+
+}
+
+.video {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+
+}
+
+.presupuesto {
+  color: red;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*--------------------trabajos ----------------------------*/
+.trabajos {
+  padding: 20px;
+  margin: 10px;
+  color: red;
+  font-size: 15px;
+  font-family: 'Lobster', cursive;
+  text-align: center
+}
+
+.parrafoTra {
+  padding: 20px;
+  margin: 10px;
+  font-family: 'Silkscreen', cursive;
+
+
+}
+
+/*--------------------ubicacion-----------------------------*/
+.mapa {
+  max-width: 600px;
+  width: 100%;
+  color: red;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+align-items: center;
+  
+}
+
+/*--------------------contacto-----------------------------*/
+.formulario {
+  padding: 20px;
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  text-align: center
+}
