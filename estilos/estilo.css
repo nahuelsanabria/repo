@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body { background-color: rgb(153, 149, 149);
-  
+body {
+  background-color: rgb(153, 149, 149);
 
 }
 
@@ -22,7 +22,7 @@ body { background-color: rgb(153, 149, 149);
 }
 
 .header {
- background-color:  red;
+  background: linear-gradient(to top red grey black );
   padding: 20px;
   grid-area: header;
   display: flex;
@@ -59,10 +59,6 @@ body { background-color: rgb(153, 149, 149);
   font-weight: bold;
 
 }
-.titulo {
-  
-
-}
 
 .main {
   background-color: white;
@@ -94,15 +90,16 @@ h2 {
 }
 
 .footer {
-  padding:20px;
+  padding: 20px;
   grid-area: footer;
-  
+
 }
+
 .grad1 {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background: linear-gradient(to top grey red black );
+  background: linear-gradient(to top grey red black);
 
 }
 
@@ -186,8 +183,8 @@ h3 {
   font-size: 30px;
   font-family: 'Lobster', cursive;
   text-align: center;
-align-items: center;
-  
+  align-items: center;
+
 }
 
 /*--------------------contacto-----------------------------*/
