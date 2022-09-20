@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(to top, black, grey, red  );
+  background: linear-gradient(to top, black, grey, red);
   padding: 20px;
   grid-area: header;
   display: flex;
@@ -100,12 +100,7 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  background:radial-gradient(circle , grey, rgb(171, 165, 165), rgb(204, 201, 201) );
-
-}
-
-h3 {
-  padding: 10px 20px;
+  background: radial-gradient(circle, rgb(113, 113, 113), rgb(171, 165, 165), rgb(215, 213, 213));
 }
 
 @media screen and (max-width:600px) {
