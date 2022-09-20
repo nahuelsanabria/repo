@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(to top red grey black );
+  background: linear-gradient(to top, black, grey, red  );
   padding: 20px;
   grid-area: header;
   display: flex;
@@ -98,8 +98,9 @@ h2 {
 .grad1 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
-  background: linear-gradient(to top grey red black);
+  background:radial-gradient(circle , grey, rgb(171, 165, 165), rgb(204, 201, 201) );
 
 }
 
